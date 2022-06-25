@@ -146,17 +146,39 @@ I'd say that this is more complicated than I had imagined! There is much more st
 
 # Thinking like a programmer
 
+### Understand the meaning of 'thinking like a developer.'
+
+It's all about problem solving and planning how you come up with the solution by breaking problems down into sub-problems, or chunks.  Then try to solve each chunk, rather than attempting to solve the whole problem in one go.
+
+## Understand flipped learning.
+
+"Flipped learning" is where the learner is responsible for their own learning. The teacher provides the learner with tools to think critically about how to solve problems, seeks solutions and overcome obstacles, rather than just providing the knowledge and the answers.
+I think this style of learning will equip us well in the workplace, where you need to stand on your own two feet and not be spoon-fed answers.
+
 ### What is your process so far for solving problems?
 
-
-
+So far it has been a case of re-tracing my steps to see where I have gone wrong. I have also used google quite often to try to get a better understanding of topics. Finally, when I've been completely stuck, I have posted questions on Discord.
 
 
 # Introduce yourself
 
+My name is Craig McLean and I am based in Arrowtown.
+
+As I have got older (I’m 52), I have learnt that my values have changed over time. 
+I care less about prestige, status and material things and more about being authentic, treating people with respect and doing something that you enjoy.
+
+I have been in some high-pressure, managerial roles before, but while there were rewards, they weren’t making me happy and sometimes my values were being compromised.
+
+I am currently a company accountant but am attending DevAcademy as I like the idea of transitioning to a new career, where I can work with others to solve problems and create things, one where I am constantly being challenged and learning new things. I’ve learnt that life is too short to keep doing the same thing if you aren’t really enjoying it.
+
+I’m hoping that Web Development will be a career that will allow for greater flexibility, and generally fit in better with my life, rather than fitting my life in and around my work, as has been the case at times.  It would also be great if it would enable me to live in different places and/or work remotely at times. 
+
+I’m looking forward to the challenge and to working with you all over the next few months!
+
 ### What was it like trying to summarise yourself to a group of strangers? 
 
-
+It was a bit strange doing this in writing to people I have yet to meet. Hard to know how much or how little to say.
 
 ### Could you feel your ego? Were you self conscious? 
 
+I was a little self-conscious as I am a person who doesn't like to open up too much, too soon. I generally like to suss people out more before saying too much!  
