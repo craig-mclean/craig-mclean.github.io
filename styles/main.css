@@ -1,0 +1,140 @@
+body {
+  background-color: #eeeee4;
+  font-family: sans-serif;
+  color: #222;
+  margin: 0;
+  }
+
+.container {
+  max-width: auto;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+header {
+  background: #76b5c5;
+  display:block;
+  width:auto;
+  text-align: left;
+  padding:10px 1px;
+}
+
+/* Margins for the headings h1 to h4 */
+h1, h2, h3, h4 {
+  margin: 0 0 0.35em;
+}
+
+/* Margins for paragraphs */
+p {
+  margin: 0 0 0.75em;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+/* Styles for the headings h1 to h3 */
+h1 {
+  font-size: 40px;
+  margin-left: 20px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+h4 {
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+/* Style the list that becomes the navigation bar */
+nav {
+  background: #76b5c5;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding: 11px 1px;
+  font-size: 17px;
+}
+
+/*Remove the bullet points from the unordered list in the navigation bar */
+.nav-list {
+  list-style-type: none; /*this removes the bullet points*/
+  margin: auto;
+  padding: 0;
+ 
+}
+
+/* Make the items in the nav list go across page rather than down*/
+.nav-items {
+  width: 90px;
+  display: inline-block;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  background: #eab676;
+  border-color: black;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.nav-items.active {
+  width: 90px;
+  display: inline-block;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  background: #ddd;
+  border-color: black;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.img--align-left {
+  float:left;  /* this is instead of using the deprecated 'align' */
+  margin: 0 16px 16px 0;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.nav-items:hover {
+  background-color: #ddd;
+  
+}
+
+/* I based these @media stylings from a Kevin Powell video 'Learn to use CSS Media Queries in less than 5 minutes'*/
+/* https://www.youtube.com/watch?v=2KL-z9A56SQ */
+/* I'm not 100% sure about them yet, but it's a start!*/
+
+/* This code will apply for a tablet - where the screen width is less than 768px*/
+@media (max-width:768px) {
+  p{
+    font-size:2rem;
+    line-height: 1.5;
+    color: red; /* Include this to demonstrate this rule is working, by changing text to red */
+  }
+  }
+
+/* This code will apply for a mobile phone - where the screen width is less than 320px */
+@media (max-width:320px) {
+p{
+  font-size:1.25rem;
+  color: green; /* Include this to demonstrate this rule is working, by changing text to green */
+  }
+
+/* I 'borrowed' this footer styling from Eamonn O'Sullivan! */
+/* This ensures that the footer is at the very bottom of the screen */
+.footer {
+position:fixed;
+bottom: 0;
+left: 0;
+width: 100%;
+}

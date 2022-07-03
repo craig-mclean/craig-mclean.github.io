@@ -1,9 +1,53 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
   <head>
-    <title>My blog</title>
+      <title>Craig McLean's blog | For DevAcademy</title>
+      <meta charset="uft-8"/>
+      <link href="styles/main.css" rel="stylesheet">
+
+      <!-- I got this from Kevin Powell's youtube lesson 'Get your media queries working with meta viewport HTML tag'-->
+      <!-- https://www.youtube.com/watch?v=SElOdK2qTpI -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>           
+ 
   <body>
-    <h1>Kia ora Taiao! (Hello World!)</h1> 
-    <p> This is the beginning of my website home page.</p>
-    <p> It will eventually contain a list of links to all my blogs. </p>
+
+   
+    <header>
+      <div class="container">
+      <h1>Craig McLean's Home Page</h1>
+      </div>
+    </header>
+  
+        <!--This sets up the horizontal navigation bar   -->  
+        <nav>
+          <ul class="nav-list">
+              <li class="nav-items active"><a href="index.html" style="text-decoration:none">Home</a></li>
+              <li class="nav-items"><a href="about.html" style="text-decoration:none">About Me</a></li>
+              <li class="nav-items"><a href="blog.html" style="text-decoration:none">Blog</a></li>
+          </ul>
+        </nav>
+
+    <main>
+      <article class="container">
+        <!--Profile picture goes here--> 
+        <img src="images/craig-mclean.png" id="image-craig-mclean" alt="Picture of Craig" class="img--align-left">
+        <h2>Welcome to my home page!</h2>
+          <p>
+            This home page is used to showcase what I'm learning as I complete the 
+            Foundations part of the DevAcademy curriculum.</p>
+          <p>
+            Using the menu above, you can navigate to learn more about me and visit my blog, where I discuss some of the things I've been learning about.
+          </p>
+          <p>Thanks for visiting!</p>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2022 Craig McLean </p>  
+      </div>
+    </footer>
   </body>
 </html>
