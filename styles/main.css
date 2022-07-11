@@ -53,6 +53,13 @@ h4 {
   margin-left: 20px;
 }
 
+/* Style parts of pages that are Examples */
+.example {
+  color:brown;
+  margin-left: 40px;
+  background: #9ca0a1;
+}
+
 /* Style the list that becomes the navigation bar */
 nav {
   background: #76b5c5;
