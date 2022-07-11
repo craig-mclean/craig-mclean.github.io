@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="/styles/main.css" rel="stylesheet" type="text/css">
+        <title>Craig McLean's blog | For DevAcademy</title>
+    </head>
+    <body>
+    
+    <header>
+      <div class="container">
+      <h1>Blog topic: JS Fundamentals</h1>
+      </div>
+    </header>
+  
+        <!--This sets up the horizontal navigation bar   -->  
+        <nav>
+          <ul class="nav-list">
+              <li class="nav-items"><a href="/index.html" style="text-decoration:none">Home</a></li>
+              <li class="nav-items"><a href="/about.html" style="text-decoration:none">About Me</a></li>
+              <li class="nav-items"><a href="/blog.html" style="text-decoration:none">Blog</a></li>
+          </ul>
+        </nav>
+
+        <main>
+          <article class="container">
+           
+            <h2>JavaScript, HTML and CSS</h2>
+              <p>Although you can make a website with HTML only, when JavaScript, HTML and CSS are all used together, this is what really brings websites to life.</p>
+              <p>What follows is a brief explanation of the role that each of these technologies plays in helping make websites look good, with greater functionality and improved useability. 
+                
+              </p>
+              <h3>HTML</h3>
+              <p>HTML is a <strong>markup language</strong> that is used to publish the content of a webpage (aka 'document') and it is also used to give a document some structure, allowing it to be more easily maintained and interpreted.</p>
+              
+              <h3>CSS</h3>
+              <p>CSS is a <strong>design language</strong> that provides us with a set of rules, to help control the way the document looks, in terms of its presentation, layout and formatting. </p>
+              
+              <h3>JavaScript</h3>
+              <p>JavaScript is a <strong>programming language</strong>, which allows us to give function to our websites. You can use it to build logic into websites, making it possible for users to interact with it and to react and respond to those interactions.</p>
+              
+              <h3>An analogy</h3>
+              <p>You may be thinking that this still sounds a little abstract. What does this all mean?!?</p>
+              <p>A useful way to think about this is to compare it to a person:</p>
+              <ul>
+                <li>HTML is like a skeleton, giving a person their shape and form, but as they are still bare bones, they aren't great to look it!</li>
+                <li>CSS provides the skeleton with skin, hair, and stylish clothes to make them look good.</li>
+                <li>JavaScript is the brain, allowing different body parts to move and take actions.</li>
+              </ul>              
+
+
+              <h2>Control flow and Loops</h2>
+              <p>For JavaScript to act as the 'brain', it needs to be able to use logic to make decisions and manipulate things.</p>
+              <p>In computer programming 'speak', <strong>control flow</strong> refers to the order in which the various elements of the code (commands, functions, evaluations, etc) are executed.</p>
+              <p>In JavaScript, the basic flow for following instructions is to start at the top, with the first statement, ending on the bottom line, with the last statement. However, to make the code more useful, usually 
+                there needs to be some sort of deviation from this basic order of events, so that the code can evaluate and consider certain conditions and change course depending on whether they are true or false.</p>
+              <p>
+                I will be discussing two types of code concepts that allow us to do these sort of things and make computer programs more useful. They are:</p>
+                <ul>
+                  <li>Conditional statements</li>
+                  <li>Loops</li>                 
+                </ul>               
+
+                <h3>Conditional statements</h3>
+                <p>These types of statements are used when you need to take different actions, depending on different conditions.
+                  The most common form of conditional statements are based on <code>if, else if, else</code>.</p>
+                  <p>Here's an example to illustrate:</p>
+                  <div class="example">
+                    <p>You need your website to provide a greeting, based on the time. If is less than 10:00, the greeting should be "Good morning". 
+                    If the time is not less that 10:00, but is less than 20:00, then the greeting should be "Good day".
+                    Otherwise, the greeting should be "Good evening".</p>
+                    <p>The code to do this would look like this:</p>
+                    <code>
+                      <p>if (time < 10) {</p>
+                      <p>greeting = "Good morning";</p>
+                      <p>} else if (time < 20) {</p>
+                      <p>  greeting = "Good day";</p>
+                      <p>} else {</p>
+                      <p>  greeting = "Good evening";</p>
+                      <p>}</p>
+                    </code>
+                  </div>
+                  <p>Another type of conditional statement is the <code>switch</code> statement, which can be used to select one of many code blocks to be executed.</p>
+                  
+                  <h3>Loops</h3>
+                    <p>A loop helps in executing one or more statements up to a desired number of times.
+                    There are several different types of loops, but I will be discussing the <code>for</code> loop here.</p>
+                    <p>It is a 'conditional' loop, which means that it will keep running for as long as a defined condition is true. It is probably the most common type of loop.</p>
+                    <p>The <code>for</code> loop is made up of these three parts, followed by a <code>statement</code>:
+                      <ul>
+                        <li><strong>initialisaton</strong> - usually used to initialise a counter variable</li>
+                        <li><strong>condition</strong> - an expression that is evaluated before each iteration of the loop. If it is true, the <code>statement</code> is executed. If the expression is false, the loop is exited and the code moves to the first statement after the <code>for </code>construct.</li>                 
+                        <li><strong>final expression</strong> - to be evaulated at the end of each iteration. Usually involves updating/incrementing the counter variable.</li>
+                      </ul>  
+                    </p>     
+                    <p>Here's an example to illustrate:</p>
+                    <div class="example">
+                      <p>  
+                        Imagine you are reading a recipe that has 10 ingredients and you want to make sure you have them all.
+                        You can do this with a loop.
+                      </p>
+                      <code>
+                        <p>//Start with the first item in the list, run though each item until you have done all 10</p>
+                        <p>for (let i = 1; i < 10; i++) {</p>
+                        <p>// check whether you have this ingredient. If you don't, then add it to your shopping list.</p>
+                        <p>// then go back to the for statement and increment </p>                      
+                        <p>}</p>
+                        <p></p>
+                        <p>// Once the loop has finished, execute the first statement outside of the loop ... </p>
+                      </code>
+                    </div>
+
+                    <h3>DOM</h3>
+                      <p>The DOM (Document Object Model) is a Web API that is used to build websites.
+                        It is an object representation of an HTML document that allows programs to change the document structure, style, and content of the document/page.</p>
+                      <p>The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.
+                        
+                        It is mostly used by web developers via the use of JavaScript, but it is not part of JavaScript itself.
+                        In fact, implementations of the DOM can be built for any language, e.g. Python.</p>
+
+                      <p>It is commonly represented as a tree view, like this:</p>
+                      <img src="/images/dom-image.jpg" id="dom-image" alt="tree diagram of DOM">    
+                        
+                      <p>All the items on the tree are known as <strong>nodes</strong> and nodes have elements, including HTML elements.</p>
+                      <p>Each HTML element has a JavaScript esquivalent that allows you to use js to access <strong>and</strong> modify the element.</p>
+                      <img src="/images/html-element.jpg" id="html-element" alt="Nodes and HTML elements.">   
+                      <p>You can set up "event listeners" which are fired to notify code of "interesting changes" that may affect code execution (such as a mouse click, key press, button click, etc).</p>
+                      <p>We can then use commands such as <code>querySelector</code> or <code>querySelectorAll</code> to get access to what we need from the DOM (e.g. when a button has been clicked) and then potentially modify an item.</p>
+                    
+                      <h3>Arrays and Objects</h3>
+                      <p>Both arrays and objects are used to store collections of data.  'Objects' are more <strong>obvious</strong> for what they are. They might represent a physical 'thing' or something you use in your daily life, such as a car.</p> 
+                      A car object might have properties such as make, model, colour. These properties are known as <em>keys</em>.
+                      These keys have values, e.g. make="Toyota", model="Corolla", colour="Blue".
+                      You can access data from an object by using <em>key value pairs</em>, e.g: <code>car.make = "Toyota"</code> 
+                      
+                      <p>An array can be thought of as being an ordered collection, or list.  The <em>elements</em> of an array are numbered with an <em>index</em>, starting with zero.</p>
+                      <p>To refer to an item within an array, you need to refer to it by its index. e.g. <code>arrayName[0]</code> is referring to the first item in the array</p>
+                      <p>It is common to use loops to run through all the items in an array, by incremeting the index. You can get the size of the array by using the <code>length</code> property.</p>
+                      <p>e.g. <code>arrayName.length</code></p> 
+                        
+                      <h3>Functions</h3>
+                      <p>A function is a block of code that is designed to perform a particular task. It is executed when something else <strong>invokes</strong> it. 
+                        You can give it a name and execute it as many times as you want, just by calling it by its name, e.g. <code>calculateAreaOfCircle()</code> </p> 
+                      <p>Functions can have one or more parameters, which will be supplied by the calling code and used inside the function.</p>
+                      <p>They are useful because they can make code easier to read by reducing complexity, and they enable code to be reused.</p>
+                       
+        
+            </article>
+        
+        
+        
+        </main>
+
+
+        <footer class="footer">
+          <div class="container">
+            <p>&copy; 2022 Craig McLean </p>  
+          </div>
+        </footer>
+      </body>
