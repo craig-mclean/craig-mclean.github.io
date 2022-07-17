@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="/styles/main.css" rel="stylesheet" type="text/css">
+        <title>Craig McLean's blog | For DevAcademy</title>
+    </head>
+    <body>
+    
+    <header>
+      <div class="container">
+      <h1>Blog topic: Problem Solving</h1>
+      </div>
+    </header>
+  
+        <!--This sets up the horizontal navigation bar   -->  
+        <nav>
+          <ul class="nav-list">
+              <li class="nav-items"><a href="/index.html" style="text-decoration:none">Home</a></li>
+              <li class="nav-items"><a href="/about.html" style="text-decoration:none">About Me</a></li>
+              <li class="nav-items"><a href="/blog.html" style="text-decoration:none">Blog</a></li>
+          </ul>
+        </nav>
+
+        <main>
+          <article class="container">
+           
+            <h2>Problem Solving</h2>
+            <p>
+              In Sprint 4 - Tech, we learnt about different <strong>problem solving </strong>techniques, and through the various coding 
+              challenges, we had many opportunities to practice some of them!
+            </p>
+            <p>
+              In this blog post, I will discuss the following:
+              <ul>  
+                <li><a href="#blocked">A time when I was 'blocked' by a problem.</a></li>               
+                <li><a href="#elegant">An example of when I used an elegant solution to a problem</a></li>               
+                <li><a href="#reflection">A reflection on how confident I feel about using various different problem-solving techniques/processes.</a></li>               
+              </ul>
+            </p>
+            <p>I discuss each of these in more detail below.</p>
+
+              <h3 id="blocked">A time when I was 'blocked' by a problem.</h3>
+                <p>
+                Part of the Foundations course involves working through a series of problems, which they have called 'kata', that are designed
+                to expose us to different types of coding problems and give us lots of practice in finding solutions to them, using JavaScript.
+              </p>
+              <p>
+                Although I managed to work my way through them and eventually found solutions to them all, there were many times when
+                I was 'stuck' and had to problem-solve to find a solution.
+              </p>
+              <p>
+                Many of the kata challenges involved being given a list of data (numbers, words, sentences) and having to somehow run through the list and
+                either make some changes to the list items, or to test the items and create a new list containing only the items that passed the test.
+              </p>
+              <p>
+                For example:
+                <ul>
+                 <li>Changing the first letter of all the words in a list to be upper case; or</li> 
+                 <li>Creating a new list that only included the even numbers from the original list.</li>
+                </ul>
+              </p>
+              <p>
+                The first part of the solution to these types of problems was to figure out how to actually run through a list and look at each item.
+              </p>
+              <p>
+                I knew how to do it using what can be described as a 'classic' programming technique, where you set up a <code>for</code> 'loop' to run 
+                through all the items, but I knew there was a more modern or 'contemporary' technique, which was introduced to JavaScript in 2015, when
+                <a href="https://www.w3schools.com/js/js_es6.asp" target="_blank" rel="noopener no referrer" alt="Link to article on ES6">ES6</a> was introduced.
+              </p> 
+              <p> 
+                ES6 is the most recent major revision to JavaScript and it included a number of new features, or methods, to make it quicker and easier to 
+                implement solutions to some of the more common programming tasks.
+              </p>
+              <p>
+                One of common programming tasks that ES6 has provided solutions for, is to make it easier to run through a list of items, and
+                I wanted to learn about these new techniques, so I had to do some problem solving to do this.
+              </p>
+              <p>
+                Some of the useful, new techniques, (such as the <code>.map</code> array method), involve using an "arrow" function, which is a 
+                'callback' function.  Although the format/syntax is much shorter than the 'classic' looping approach (e.g. it is only one line of code)
+                I struggled to get my head around thr structure of it. 
+              </p>
+              <p>
+                I used google and read some articles, but couldn't make sense of them, so I tried YouTube, and found these two videos which really helped: 
+              </p>
+              <ul>
+                <li> <a href="https://www.youtube.com/watch?v=cTNR5eN-uEY" target="_blank" rel="noopener no referrer" alt="Link to video">Inbuilt JavaScript method map() explained!</a></li>
+              </ul>
+
+
+              <h3 id="elegant">Finding an elegant solution to a problem.</h3>
+                <p>
+                  In one of the other challenges, we had to write a function that takes the content of a string, and returns another string, with the letters all in
+                  reverse order.
+                </p>
+                <p>
+                  Again, I knew we could do this with a <code>for</code> loop that started at the end of the string and looked at each item
+                  in reverse, taking that item and pushing it into a new array.  However, I wanted to do it using some of the ES6 methods.
+                </p>  
+                <p>
+                  Once again, I turned to the internet, and this time I hit the google jackpot and found an example that solved this exact problem!
+                </p>
+                <p>
+                  This very elegantly combines three methods (<code>.split</code>, <code>.reverse</code> and <code>.join)</code> on only one line of code:
+                </p>
+                  <code><pre>
+                    function reverseString(str) {
+                      return str.split("").reverse().join("");
+                    }
+                    reverseString("hello");
+                  </pre></code>
+                
+              <h3 id="reflection">Reflecting on problem-solving techniques/processes.</h3>
+                <p>
+                  There are many different techniques that can be used to solve coding problems, including:
+                </p>
+                    <ul>
+                      <li>Pseudocode</li>
+                      <li>Trying something</li>
+                      <li>Rubber ducky method</li>
+                      <li>Reading error messages</li>
+                      <li>Console.logging</li>
+                      <li>Googling</li>
+                      <li>Asking your peers for help</li>
+                      <li>Asking coaches for help</li>
+                      <li>Improving your process with reflection</li>
+                    </ul>
+                <p>
+                  We were encouraged to investigate a couple of these.  I was already familiar with using Google and I find that
+                  pseudo code is really helpful, so  I chose two that I wasn't sure about.
+                </p>
+                <p>
+                  Firstly, the 'Rubber ducky method', because the name was so intriguing(!), and then 'Reading Error Messages', as it seems obvious. 
+                </p> 
+                  <h4>The Rubber Ducky Method</h4>
+                    <p>
+                      As the name suggests, this involves talking to an inanimate object (a rubber ducky) and explaining what each line of code is meant to be doing.
+                      The act of taking the time to talk through what your code does, line by line, can help you ‘unblock’ and in doing so, you might spot the issue or find a solution yourself.
+                      Describing what it is supposed to do and observing what it actually does can shine a light on the issue.
+                      This is a phenomenon I’ve encountered many times, where, while I’m in the process of explaining an issue to someone to see if they have an answer, the answer pops into my head!
+                    </p>  
+                    <h4>Read the Error Message</h4>
+                    <p>
+                      This seemed too obvious to be a “technique”, so I thought I’d research it and see if I was missing something.
+                      Often people don’t read these carefully enough and they may miss valuable clues that could direct you to where the issue is.
+                      By understanding the errors you receive and connecting the dots between each error message and the solution to the problem, 
+                      you’ll gain valuable coding skills.
+                    </p>  
+                    <p>From my research, I learned that there are some key steps that you can take, such as:</p>                    
+                      <ul>
+                        <li>Dissect the error and learn to spot the key piece of information (aka ‘clue’) within the error message. It will often point you to a part of the code that your should start looking at.</li>
+                        <li>Is the solution in the error? If the problem is due to a syntax error, sometimes the compiler will use a symbol to point to exactly where the issue is.</li>
+                        <li>It may help to read it aloud (same philosophy as the rubber ducky method!)</li>
+                        <li>Check the syntax (you may need to use google)</li>
+                        <li>Do a search for the error message (google again). Someone else may have had the issue and someone may have solved it</li>
+                        <li>When trouble shooting, change as little as possible each time, to help isolate the problem.</li>
+                      </ul>
+                <p>
+                  During Sprint 4, I found that the methods I used most often and most successfully were to write pseudo code, use the console log to see what's happening, and to ask google. 
+                  I was also much more mindful of reading the error messages and I did find that they often pointed me to the right place. 
+                </p>
+                <p>
+                  Luckily, I was able to get by with just these approaches, but if I was still blocked, I would probably have turned to Discord and asked my very helpful peers and/or instructors!
+                </p>
+          </article>
+        
+                
+        </main>
+
+
+        <footer class="footer">
+          <div class="container">
+            <p>&copy; 2022 Craig McLean </p>  
+          </div>
+        </footer>
+      </body>
