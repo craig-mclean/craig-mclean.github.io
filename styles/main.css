@@ -81,6 +81,7 @@ nav {
   list-style-type: none; /*this removes the bullet points*/
   margin: auto;
   padding: 0;
+  display: inline;
  
 }
 
